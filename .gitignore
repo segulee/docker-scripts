@@ -1,4 +1,12 @@
 # data files
 es_data/
 log/
+data/
+datalog/
+log/
 
+# virtualenv
+venv/
+
+# localtest
+local_test.py
