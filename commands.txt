@@ -1,2 +1,0 @@
-# 원하는 문자열이 포함된 이미지 싹다 지우기
-docker rmi `docker images | awk '$1 ~ /문자열/ {print $3}'`

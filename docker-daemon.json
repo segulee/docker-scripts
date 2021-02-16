@@ -1,0 +1,10 @@
+{
+    "registry-mirrors": [],
+    "insecure-registries": [],
+    "debug": false,
+    "experimental": false,
+    "features": {
+        "buildkit": true
+    },
+    "data-root": "F:\\docker"
+}
