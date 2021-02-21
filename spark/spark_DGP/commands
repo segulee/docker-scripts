@@ -1,0 +1,11 @@
+## local
+
+wget https://www.apache.org/dyn/closer.lua/spark/spark-2.4.7/spark-2.4.7-bin-hadoop2.7.tgz
+tar -xvzf spark-2.4.7-bin-hadoop2.7.tgz
+cd spark-2.4.7-bin-hadoop2.7/bin
+pyspark
+
+## DGP definitive guide practice 버전
+
+docker exec -it spark /bin/bash /spark-2.3.2-bin-hadoop2.7/bin/pyspark
+docker exec 
