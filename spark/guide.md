@@ -12,3 +12,11 @@ vim ~/.bashrc
 export YARN_CONF_DIR=$HADOOP_HOME/etc/hadoop
 export SPARK_HOME=/spark
 export PATH=$PATH:$SPARK_HOME/bin
+
+
+
+
+## start
+
+// hadoop 시작
+start-all.sh 
