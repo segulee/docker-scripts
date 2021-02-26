@@ -35,10 +35,11 @@ docker run -itd\
     --network hadoop_net\
     --ip 10.0.2.2\
     -p 50070:50070\
+    -p 8088:8088\
     -v ${PWD}/masters:${HADOOP_HOME}/etc/hadoop/masters\
     -v ${PWD}/workers:${HADOOP_HOME}/etc/hadoop/workers\
     ${addhost}\
-    segulee/ubuntu-hadoop:1.0.0.2\
+    segulee/ubuntu-hadoop:1.0.0.4\
     /bin/bash
 
 i=0
@@ -53,7 +54,7 @@ while [ $i -lt $workers ]; do
         -v ${PWD}/masters:${HADOOP_HOME}/etc/hadoop/masters\
         -v ${PWD}/workers:${HADOOP_HOME}/etc/hadoop/workers\
         ${addhost}\
-        segulee/ubuntu-hadoop:1.0.0.2\
+        segulee/ubuntu-hadoop:1.0.0.4\
         /bin/bash
 done
 
