@@ -1,4 +1,7 @@
 #/bin/bash
+#/bin/bash
 
-docker commit hadoop-base segulee/ubuntu-hadoop:1.0.0.3
-docker push segulee/ubuntu-hadoop:1.0.0.3
+VERSION=$(cat version)
+
+docker commit hadoop-base segulee/ubuntu-hadoop:${VERSION}
+docker push segulee/ubuntu-hadoop:${VERSION}

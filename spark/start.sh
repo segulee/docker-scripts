@@ -4,16 +4,18 @@ PWD=${PWD}
 workers="${1:-2}"
 echo $workers workers
 
+
 VERSION=$(cat version)
 HADOOP_HOME="/usr/local/hadoop"
-NETWORK="hadoop_net"
+NETWORK="hdspark_net"
 NETWORK_BASE="11.0.2"
-IMAGE="segulee/ubuntu-hadoop:${VERSION}"
+IMAGE="segulee/hadoop-spark:${VERSION}"
+
 
 rm -rf masters
 rm -rf workers
 
-docker network rm hadoop_net
+docker network rm ${NETWORK}
 docker network create --subnet "${NETWORK_BASE}.0/24" ${NETWORK}
 
 echo master > masters
