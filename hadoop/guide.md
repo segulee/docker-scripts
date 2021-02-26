@@ -1,3 +1,8 @@
+## docker 바깥
+
+sudo vim /etc/hosts
+127.0.0.1 localhost master
+추가
 
 ## start
 ```shell
