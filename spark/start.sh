@@ -26,7 +26,7 @@ while [ $i -lt $workers ]; do
     echo slave$i >> workers;
 done
 
-addhost="--add-host=master:10.0.2.2";
+addhost="--add-host=master:${NETWORK_BASE}.2";
 
 i=0
 while [ $i -lt $workers ]; do
